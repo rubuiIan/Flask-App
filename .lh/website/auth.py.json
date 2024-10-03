@@ -1,0 +1,34 @@
+{
+    "sourceFile": "website/auth.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1727947931813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727947949355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n-from flask import Blueprint, re\r\n+from flask import Blueprint, render_template\r\n \r\n auth = Blueprint('auth', __name__)\r\n \r\n @auth.route('/login')\r\n def login():\r\n-    return \"<p>Login</p>\"\r\n+    return \r\n \r\n @auth.route('/logout')\r\n def logout():\r\n     return \"<p>Logout</p>\"\r\n"
+                },
+                {
+                    "date": 1727947956344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n auth = Blueprint('auth', __name__)\r\n \r\n @auth.route('/login')\r\n def login():\r\n-    return \r\n+    return render_template(\"\")\r\n \r\n @auth.route('/logout')\r\n def logout():\r\n     return \"<p>Logout</p>\"\r\n"
+                },
+                {
+                    "date": 1727947962772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n auth = Blueprint('auth', __name__)\r\n \r\n @auth.route('/login')\r\n def login():\r\n-    return render_template(\"login\")\r\n+    return render_template(\"login.html\")\r\n \r\n @auth.route('/logout')\r\n def logout():\r\n     return \"<p>Logout</p>\"\r\n"
+                },
+                {
+                    "date": 1727948245736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n auth = Blueprint('auth', __name__)\r\n \r\n @auth.route('/login')\r\n def login():\r\n-    return render_template(\"login.html\", t)\r\n+    return render_template(\"login.html\", tex)\r\n \r\n @auth.route('/logout')\r\n def logout():\r\n     return \"<p>Logout</p>\"\r\n"
+                }
+            ],
+            "date": 1727947931813,
+            "name": "Commit-0",
+            "content": "from flask import Blueprint, re\r\n\r\nauth = Blueprint('auth', __name__)\r\n\r\n@auth.route('/login')\r\ndef login():\r\n    return \"<p>Login</p>\"\r\n\r\n@auth.route('/logout')\r\ndef logout():\r\n    return \"<p>Logout</p>\"\r\n\r\n@auth.route('/sign-up')\r\ndef sign_up():\r\n    return \"<p>Sign Up</p>\""
+        }
+    ]
+}

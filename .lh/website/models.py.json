@@ -1,0 +1,18 @@
+{
+    "sourceFile": "website/models.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1727951043004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1727951043004,
+            "name": "Commit-0",
+            "content": "from . import db\r\nfrom flask_login import UserMixin\r\nfrom sqlalchemy.sql import func\r\n\r\n\r\nclass Note(db.Model):\r\n    id = db.Column(db.Integer, primary_key=True)\r\n    data = db.Column(db.String(10000))\r\n    date = db.Column(db.DateTime(timezone=True), default=func.now())\r\n    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))\r\n\r\n\r\nclass User(db.Model, UserMixin):\r\n    id = db.Column(db.Integer, primary_key=True)\r\n    email = db.Column(db.String(150), unique=True)\r\n    password = db.Column(db.String(150))\r\n    first_name = db.Column(db.String(150))\r\n    notes = db.relationship('Note')"
+        }
+    ]
+}

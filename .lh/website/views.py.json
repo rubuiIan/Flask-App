@@ -1,0 +1,30 @@
+{
+    "sourceFile": "website/views.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1727946835892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727946847875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-from flask import Blueprint, render_\r\n+from flask import Blueprint, render_template\r\n \r\n views = Blueprint('views', __name__)\r\n \r\n @views.route('/')\r\n def home():\r\n-    return \"<h1>Test</h1>\"\r\n+    return render\r\n"
+                },
+                {
+                    "date": 1727946856704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n views = Blueprint('views', __name__)\r\n \r\n @views.route('/')\r\n def home():\r\n-    return render\r\n+    return render_template(\"\")\r\n"
+                },
+                {
+                    "date": 1727954519489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n from flask import Blueprint, render_template\r\n+from flask_login import current_user\r\n \r\n views = Blueprint('views', __name__)\r\n \r\n @views.route('/')\r\n def home():\r\n-    return render_template(\"\")\r\n+    return render_template(\"home.html\", user=current_user)\r\n+\r\n"
+                }
+            ],
+            "date": 1727946835892,
+            "name": "Commit-0",
+            "content": "from flask import Blueprint, render_\r\n\r\nviews = Blueprint('views', __name__)\r\n\r\n@views.route('/')\r\ndef home():\r\n    return \"<h1>Test</h1>\"\r\n"
+        }
+    ]
+}

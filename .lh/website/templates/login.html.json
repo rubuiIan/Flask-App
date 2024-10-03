@@ -1,0 +1,30 @@
+{
+    "sourceFile": "website/templates/login.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1727947883128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1727949170925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n {% extends \"base.html\" %} {% block title %}Login{% endblock %} {% block content\r\n-    %}\r\n+%}\r\n     <form method=\"POST\">\r\n       <h3 align=\"center\">Login</h3>\r\n       <div class=\"form-group\">\r\n         <label for=\"email\">Email Address</label>\r\n"
+                },
+                {
+                    "date": 1727949179670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,28 @@\n {% extends \"base.html\" %} {% block title %}Login{% endblock %} {% block content\r\n %}\r\n-    <form method=\"POST\">\r\n-      <h3 align=\"center\">Login</h3>\r\n-      <div class=\"form-group\">\r\n-        <label for=\"email\">Email Address</label>\r\n-        <input\r\n-          type=\"email\"\r\n-          class=\"form-control\"\r\n-          id=\"email\"\r\n-          name=\"email\"\r\n-          placeholder=\"Enter email\"\r\n-        />\r\n-      </div>\r\n-      <div class=\"form-group\">\r\n-        <label for=\"password\">Password</label>\r\n-        <input\r\n-          type=\"password\"\r\n-          class=\"form-control\"\r\n-          id=\"password\"\r\n-          name=\"password\"\r\n-          placeholder=\"Enter password\"\r\n-        />\r\n-      </div>\r\n-      <br />\r\n-      <button type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n-    </form>\r\n-    {% endblock %}\n\\ No newline at end of file\n+<form method=\"POST\">\r\n+    <h3 align=\"center\">Login</h3>\r\n+    <div class=\"form-group\">\r\n+    <label for=\"email\">Email Address</label>\r\n+    <input\r\n+        type=\"email\"\r\n+        class=\"form-control\"\r\n+        id=\"email\"\r\n+        name=\"email\"\r\n+        placeholder=\"Enter email\"\r\n+    />\r\n+    </div>\r\n+    <div class=\"form-group\">\r\n+    <label for=\"password\">Password</label>\r\n+    <input\r\n+        type=\"password\"\r\n+        class=\"form-control\"\r\n+        id=\"password\"\r\n+        name=\"password\"\r\n+        placeholder=\"Enter password\"\r\n+    />\r\n+    </div>\r\n+    <br />\r\n+    <button type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n+</form>\r\n+{% endblock %}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1727954353417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,2 @@\n-{% extends \"base.html\" %} {% block title %}Login{% endblock %} {% block content\r\n-%}\r\n-<form method=\"POST\">\r\n-    <h3 align=\"center\">Login</h3>\r\n-    <div class=\"form-group\">\r\n-    <label for=\"email\">Email Address</label>\r\n-    <input\r\n-        type=\"email\"\r\n-        class=\"form-control\"\r\n-        id=\"email\"\r\n-        name=\"email\"\r\n-        placeholder=\"Enter email\"\r\n-    />\r\n-    </div>\r\n-    <div class=\"form-group\">\r\n-    <label for=\"password\">Password</label>\r\n-    <input\r\n-        type=\"password\"\r\n-        class=\"form-control\"\r\n-        id=\"password\"\r\n-        name=\"password\"\r\n-        placeholder=\"Enter password\"\r\n-    />\r\n-    </div>\r\n-    <br />\r\n-    <button type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n-</form>\r\n+\r\n {% endblock %}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1727947883128,
+            "name": "Commit-0",
+            "content": "{% extends \"base.html\" %} {% block title %}Login{% endblock %} {% block content\r\n    %}\r\n    <form method=\"POST\">\r\n      <h3 align=\"center\">Login</h3>\r\n      <div class=\"form-group\">\r\n        <label for=\"email\">Email Address</label>\r\n        <input\r\n          type=\"email\"\r\n          class=\"form-control\"\r\n          id=\"email\"\r\n          name=\"email\"\r\n          placeholder=\"Enter email\"\r\n        />\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"password\">Password</label>\r\n        <input\r\n          type=\"password\"\r\n          class=\"form-control\"\r\n          id=\"password\"\r\n          name=\"password\"\r\n          placeholder=\"Enter password\"\r\n        />\r\n      </div>\r\n      <br />\r\n      <button type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n    </form>\r\n    {% endblock %}"
+        }
+    ]
+}
